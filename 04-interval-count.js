@@ -1,5 +1,5 @@
 /***********************************************************************
-Write a function `intervalCount` that accepts a callback, a delay in 
+Write a function, `intervalCount`, that accepts a callback, a delay in 
 milliseconds, and an amount. The function should set an interval with 
 the given callback and delay, but clear the interval after the callback
 has been executed 'amount' number of times.

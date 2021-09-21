@@ -3,7 +3,7 @@ Recall that the built-in `setTimeout` function accepts a delay in
 milliseconds. It would be cool if we had a version that could accept the
 delay in seconds!
 
-Write a function `setSecondsTimeout` that accepts a callback and a delay
+Write a function, `setSecondsTimeout`, that accepts a callback and a delay
 in *seconds*. The function should set a timeout on the given callback for
 the specified amount of time. Feel free to use the built-in `setTimeout`
 in your implementation.

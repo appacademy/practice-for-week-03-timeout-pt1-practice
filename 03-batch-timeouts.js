@@ -1,5 +1,5 @@
 /***********************************************************************
-Write a function `batchTimeouts` that accepts an array of callbacks and an
+Write a function, `batchTimeouts`, that accepts an array of callbacks and an
 array of delays in milliseconds. The function should set a timeout for each
 callback in the array with its corresponding delay. For example, the
 callback at index 0 should be set with the delay at index 0,
