@@ -3,9 +3,9 @@ const expect = chai.expect;
 const spies = require("chai-spies");
 chai.use(spies);
 
-const batchTimeout = require("../problems/03-batch-timeouts.js");
+const batchTimeouts = require("../problems/03-batch-timeouts.js");
 
-describe("batchTimeout()", function() {
+describe("batchTimeouts()", function() {
   afterEach(function() {
     chai.spy.restore(global);
   });
@@ -14,7 +14,7 @@ describe("batchTimeout()", function() {
     const callbackSpies = [chai.spy(), chai.spy(), chai.spy()];
     const delays = [500, 200, 900];
     const timeoutSpy = chai.spy.on(global, "setTimeout");
-    batchTimeout(callbackSpies, delays);
+    batchTimeouts(callbackSpies, delays);
     expect(timeoutSpy).to.have.been.first.called.with.exactly(
       callbackSpies[0],
       delays[0]
@@ -33,7 +33,7 @@ describe("batchTimeout()", function() {
     chai.spy.on(global, "setTimeout");
     const callbacks = [() => null, () => null];
     const delays = [500, 200]
-    const everyValueTimeout = batchTimeout(callbacks, delays).every(val => val.constructor.name === 'Timeout');
+    const everyValueTimeout = batchTimeouts(callbacks, delays).every(val => val.constructor.name === 'Timeout');
     expect(everyValueTimeout).to.equal(true);
   });
 });
