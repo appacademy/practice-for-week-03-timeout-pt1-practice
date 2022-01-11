@@ -9,7 +9,11 @@ objects for each timeout that was set. You may assume that both array arguments
 have the same length.
 
 In addition to Mocha, we recommend that you test your code manually using 
-node with the examples below.
+node with the examples below to confirm the correct behavior.
+
+Note: The test specs for this problem are valid for iterative solutions. If you
+pass the specs for an iterative solution and then attempt a recursive solution,
+you will need to test your new solution manually using node.
 
 Example:
 
